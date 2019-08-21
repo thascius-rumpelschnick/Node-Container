@@ -1,6 +1,6 @@
 #! /bin/bash
 
-container=ronnyrotze82/node-container:1.0.0
+container=ronnyrotze82/node-container:latest
 command=""
 
 for arg in "$@"

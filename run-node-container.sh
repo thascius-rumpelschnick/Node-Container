@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 container=ronnyrotze82/node-container:latest
 command=""
@@ -8,4 +8,6 @@ do
 command="$command $arg"
 done
 
-docker run -it --rm --name node -v `pwd`:/app -w /app $container $command
+docker run -it --rm --name node -v `pwd`:/home/app -w /home/app $container $command
+
+exit 0
